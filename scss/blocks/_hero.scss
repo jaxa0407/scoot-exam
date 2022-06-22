@@ -8,7 +8,6 @@
     height: 650px;
     margin: 0 auto;
     position: relative;
-    z-index: -55;
 
     &__container {
         
@@ -67,42 +66,16 @@
             top: calc(50% - 10px);
             right: calc(-100% - 40px);
         }
-    }
-    .btn {
-        @include button;
-        &__btn {
-            margin-left: 32px;
-            margin-bottom: 25px;
-            background: none;
-            border: none;
-            outline: none;
-            font-family: 'Space Mono';
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 25px;
-            text-align: center;
-            color: #FFFFFF;
-            min-width: 180px;
-            padding: 14px 0;
-            background-color: $yellow;
-            transition: all 0.4s ease;
-            
-            &:hover {
-                color: $yellow;
-                background-color: #FFFFFF;
-                border: 2px solid $yellow;
-            }
-            
-            &:active {
-                transform: scale(0.9);
-                color: $yellow;
-                background-color: #FFFFFF;
-                border: 2px solid $yellow;
-            }
-        }
-    }
+        
+    }   
 
+    &__btn {
+        
+    }
 }
+    
+
+
 
 
 
@@ -129,7 +102,8 @@
                 top: calc(50% - 10px);
                 left: calc(-50% - 57px);
             }
-    
+
+
             &::after {
                 content: "";
                 max-width: 250px;

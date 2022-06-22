@@ -1,0 +1,200 @@
+
+.download {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    background: #495567;
+    background-image: url(/images/circles.svg);
+    background-repeat: no-repeat;
+    background-position: right,;
+    background-position-y: bottom;
+
+
+		&__container {
+            margin-top: 100px;
+		}
+
+		&__inner-wrap {
+            
+            padding-top: 102px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+		}
+
+		&__heading {
+            max-width: 415px;
+            width: 100%;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #FFFFFF;
+		}
+
+		&__right {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+		}
+
+        &__link {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 159px;
+            height: 56px;
+            background: #E5ECF4;
+            border-radius: 4px;
+
+            img {
+                padding-left: 15px;
+            }
+        }
+
+		&__list-item {
+            display: flex;
+            align-items: center;
+		}
+
+		&__item-data {
+            padding-right: 15px;
+		}
+
+		&__item-txt {
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+            color: #495567;
+		}
+
+		&__item-heading {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.892857px;
+            color: #495567;
+		}
+}
+
+@media only screen and (max-width: 800px) {
+    .download {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        height: 300px;
+        background: #495567;
+        background-image: url(/images/circles.svg);
+        background-repeat: no-repeat;
+        background-position: right,;
+        background-position-y: bottom;
+    
+    
+            &__container {
+            }
+    
+            &__inner-wrap {
+                
+                padding-top: 62px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+    
+            &__heading {
+                margin-bottom: 40px;
+                text-align: center;
+                max-width: 415px;
+                width: 100%;
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14286px;
+                color: #FFFFFF;
+            }
+    
+            &__right {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+            }
+    
+            &__link {
+                display: flex;
+                text-decoration: none;
+                align-items: center;
+                justify-content: space-between;
+                width: 159px;
+                height: 56px;
+                background: #E5ECF4;
+                border-radius: 4px;
+    
+                img {
+                    padding-left: 15px;
+                }
+            }
+    
+            &__list-item {
+                display: flex;
+                align-items: center;
+            }
+    
+            &__item-data {
+                padding-right: 15px;
+            }
+    
+            &__item-txt {
+                font-size: 10px;
+                line-height: 15px;
+                letter-spacing: -0.446429px;
+                color: #495567;
+            }
+    
+            &__item-heading {
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: -0.892857px;
+                color: #495567;
+            }
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .download {
+        &__heading {
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        &__link {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 130px;
+            height: 40px;
+            background: #E5ECF4;
+            border-radius: 4px;
+
+            img {
+                padding-left: 10px;
+            }
+        }
+
+        &__item-txt {
+            font-size: 8px;
+            line-height: 12px;
+            letter-spacing: -0.446429px;
+            color: #495567;
+        }
+
+        &__item-heading {
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: -0.892857px;
+            color: #495567;
+        }
+    }
+
+}

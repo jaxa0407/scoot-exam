@@ -197,19 +197,19 @@
             min-width: 180px;
             padding: 14px 0;
             background-color: $yellow;
+            border: 2px solid $yellow;
             transition: all 0.4s ease;
+            
             
             &:hover {
                 color: $yellow;
                 background-color: #FFFFFF;
-                border: 2px solid $yellow;
             }
             
             &:active {
                 transform: scale(0.9);
                 color: $yellow;
                 background-color: #FFFFFF;
-                border: 2px solid $yellow;
             }
         }
         
@@ -271,18 +271,17 @@
     min-width: 180px;
     padding: 14px 0;
     background-color: $yellow;
+    border: 2px solid $yellow;
     transition: all 0.4s ease;
     
     &:hover {
         color: $yellow;
         background-color: #FFFFFF;
-        border: 2px solid $yellow;
     }
     
     &:active {
         transform: scale(0.9);
         color: $yellow;
         background-color: #FFFFFF;
-        border: 2px solid $yellow;
     }
 }
