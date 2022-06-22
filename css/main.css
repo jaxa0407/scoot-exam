@@ -429,6 +429,7 @@ p {
   right: 0;
   left: 0;
   background-color: #FFFFFF;
+  z-index: 999;
 }
 
 .header__inner-wrap {
@@ -803,7 +804,7 @@ p {
   right: calc(-100% - 40px);
 }
 
-.hero__bnt {
+.hero__btn {
   margin-left: 95px;
 }
 
@@ -881,9 +882,6 @@ p {
   .hero__left-txt::after {
     display: none;
   }
-  .hero__bnt {
-    margin: 0;
-  }
   .hero__left {
     position: relative;
     display: -webkit-box;
@@ -935,12 +933,14 @@ p {
     text-align: center;
     font-size: 40px;
     line-height: 40px;
+    margin: 0;
+    margin-bottom: 24px;
   }
   .hero__left-txt {
     text-align: center;
     margin: 0;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -952,10 +952,11 @@ p {
   .hero__left-txt::after {
     display: none;
   }
-  .hero__bnt {
+  .hero__btn {
     margin: 0;
   }
   .hero__left {
+    padding: 0 32px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -967,7 +968,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 115px;
+    padding-top: 110px;
     max-width: 500px;
     width: 100%;
   }
@@ -983,6 +984,238 @@ p {
     width: 100%;
     height: 140px;
     z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero__left {
+    padding-top: 90px;
+  }
+}
+
+.stage {
+  margin-top: 160px;
+}
+
+.stage__list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.stage__list::before {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: -19%;
+  max-width: 973px;
+  width: 100%;
+  height: 0;
+  border: 8px solid #E5ECF4;
+  color: #E5ECF4;
+}
+
+.stage__list-item {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  height: 300px;
+}
+
+.stage__list-item:first-child::before {
+  background-image: url(/images/phone-logo.svg);
+}
+
+.stage__list-item:nth-child(2)::before {
+  background-image: url(/images/scooter-logo.svg);
+}
+
+.stage__list-item:nth-child(3)::before {
+  background-image: url(/images/rider-logo.svg);
+}
+
+.stage__list-item::before {
+  content: "";
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FCB72B;
+  border-radius: 50%;
+}
+
+.stage__item-heading {
+  margin-top: 136px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  margin-bottom: 27px;
+}
+
+.stage__item-txt {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+@media only screen and (max-width: 770px) {
+  .stage {
+    padding-bottom: 100px;
+    padding-top: 0;
+  }
+  .stage__list {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+    padding: 0 90px 0 150px;
+    gap: 100px;
+  }
+  .stage__list::before {
+    content: "";
+    display: none;
+  }
+  .stage__list-item {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    height: 130px;
+  }
+  .stage__list-item:first-child::before {
+    background-image: url(/images/phone-logo.svg);
+  }
+  .stage__list-item:first-child::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -118px;
+    width: 0;
+    height: 700px;
+    border: 8px solid #E5ECF4;
+    z-index: -999999;
+  }
+  .stage__list-item:nth-child(2)::before {
+    background-image: url(/images/scooter-logo.svg);
+  }
+  .stage__list-item:nth-child(3)::before {
+    background-image: url(/images/rider-logo.svg);
+  }
+  .stage__list-item::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: -160px;
+    width: 96px;
+    height: 96px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FCB72B;
+    border-radius: 50%;
+  }
+  .stage__item-heading {
+    margin-top: 136px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin-bottom: 27px;
+  }
+  .stage__item-txt {
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .stage {
+    padding-bottom: 100px;
+    margin-top: 120px;
+  }
+  .stage__list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+    padding: 0 32px;
+    gap: 100px;
+  }
+  .stage__list::before {
+    content: "";
+    display: none;
+  }
+  .stage__list-item {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
+  }
+  .stage__list-item:first-child::before {
+    background-image: url(/images/phone-mob-logo.svg);
+  }
+  .stage__list-item:first-child::after {
+    display: none;
+  }
+  .stage__list-item:nth-child(2)::before {
+    background-image: url(/images/scooter-mob-logo.svg);
+  }
+  .stage__list-item:nth-child(3)::before {
+    background-image: url(/images/rider-mob-logo.svg);
+  }
+  .stage__list-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 28px);
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FCB72B;
+    border-radius: 50%;
+  }
+  .stage__item-heading {
+    text-align: center;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin: 0;
+    padding-top: 80px;
+    margin-bottom: 24px;
+  }
+  .stage__item-txt {
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
   }
 }
 /*# sourceMappingURL=main.css.map */

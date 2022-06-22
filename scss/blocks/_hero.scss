@@ -68,11 +68,43 @@
             right: calc(-100% - 40px);
         }
     }
-
-    &__bnt {
-        margin-left: 95px;
+    .btn {
+        @include button;
+        &__btn {
+            margin-left: 32px;
+            margin-bottom: 25px;
+            background: none;
+            border: none;
+            outline: none;
+            font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            min-width: 180px;
+            padding: 14px 0;
+            background-color: $yellow;
+            transition: all 0.4s ease;
+            
+            &:hover {
+                color: $yellow;
+                background-color: #FFFFFF;
+                border: 2px solid $yellow;
+            }
+            
+            &:active {
+                transform: scale(0.9);
+                color: $yellow;
+                background-color: #FFFFFF;
+                border: 2px solid $yellow;
+            }
+        }
     }
+
 }
+
+
 
 @media only screen and (max-width: 970px) {
     .hero {
@@ -149,10 +181,6 @@
             }
         }
 
-        &__bnt {
-            margin: 0;
-        }
-
         &__left {
             position: relative;
             display: flex;
@@ -193,12 +221,14 @@
             text-align: center;
             font-size: 40px;
             line-height: 40px;
+            margin: 0;
+            margin-bottom: 24px;
         }
         &__left-txt {
             text-align: center;
             margin: 0;
             position: relative;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             font-weight: 400;
             font-size: 15px;
             line-height: 25px;
@@ -213,16 +243,15 @@
             }
         }
 
-        &__bnt {
-            margin: 0;
-        }
+
 
         &__left {
+            padding: 0 32px;
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 115px;
+            padding-top: 110px;
             max-width: 500px;
             width: 100%;
 
@@ -243,3 +272,12 @@
     }
 }
 
+@media only screen and (max-width: 350px) {
+
+    .hero {
+        &__left {
+            padding-top: 90px;
+        }
+    }
+
+}
