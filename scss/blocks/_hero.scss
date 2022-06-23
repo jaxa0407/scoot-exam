@@ -74,11 +74,6 @@
         
     }
 }
-    
-
-
-
-
 
 @media only screen and (max-width: 970px) {
     .hero {
@@ -256,4 +251,61 @@
         }
     }
 
+}
+
+.ahero {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(/images/about-hero-bcg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+    
+    &__container {
+        
+        &::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 31px);
+        right: -32px;
+        background-image: url(/images/about-circles.svg);
+        width: 235px;
+        height: 62px;
+        background-repeat: no-repeat;
+    }
+
+    }
+
+
+    &__heading {
+        padding-top: 72px;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ahero {
+
+        &__container {
+        
+            &::after {
+                display: none;
+            }
+        }
+        
+
+        &__heading {
+            text-align: center;
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+    
 }
