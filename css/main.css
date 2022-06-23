@@ -1774,6 +1774,7 @@ p {
     height: 150px;
     background-image: url(/images/function-big-arrow.svg);
     background-repeat: no-repeat;
+    background-position: right;
   }
   .function__img {
     width: 311px;
@@ -1830,9 +1831,8 @@ p {
     content: "";
     position: absolute;
     top: 0;
-    left: -60%;
-    max-width: 740px;
-    width: 100%;
+    left: -65%;
+    width: 740px;
     height: 150px;
     background-image: url(/images/nth-back.svg);
     background-repeat: no-repeat;
