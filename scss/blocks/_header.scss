@@ -139,6 +139,7 @@
             height: calc(100vh - 100%);
             background: rgba(0, 0, 0, 0.075);
             transform: translateX(-200%);
+            transition: all 1s ease;
         }
         
         &__right {
@@ -189,7 +190,7 @@
         
         &__btn {
             margin-left: 32px;
-            margin-bottom: 25px;
+            margin-bottom: 50px;
             background: none;
             border: none;
             outline: none;

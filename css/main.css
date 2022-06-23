@@ -591,6 +591,8 @@ p {
     background: rgba(0, 0, 0, 0.075);
     -webkit-transform: translateX(-200%);
             transform: translateX(-200%);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
   .header__right {
     -webkit-box-orient: vertical;
@@ -648,7 +650,7 @@ p {
   }
   .header__btn {
     margin-left: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     background: none;
     border: none;
     outline: none;
