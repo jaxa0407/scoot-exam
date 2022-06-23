@@ -383,6 +383,7 @@ body {
   font-size: 16px;
   padding-top: 96px;
   overflow-x: hidden;
+  position: relative;
 }
 
 img {
@@ -2602,5 +2603,109 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.faq {
+  position: relative;
+  padding: 200px 0;
+}
+
+.faq__heading {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.faq__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.faq__item-heading {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.78571px;
+  color: #495567;
+}
+
+.faq__item-right {
+  overflow-y: hidden;
+  max-width: 730px;
+  width: 100%;
+}
+
+.faq__right-question {
+  padding: 32px 40px;
+  background-color: #F2F5F9;
+  max-height: 90px;
+  height: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.faq__question-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.faq__question-heading {
+  padding-bottom: 24px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.faq__qiestion-btn {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.faq__opened-btn {
+  display: none;
+}
+
+.faq__answer {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.faq__open .faq__answer {
+  position: static;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.faq__open .faq__opened-btn {
+  display: inline-block;
+}
+
+.faq__open .faq__closed-btn {
+  display: none;
+}
+
+.faq__open .faq__right-question {
+  padding: 32px 40px;
+  background-color: #F2F5F9;
+  max-height: 195px;
+  height: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 /*# sourceMappingURL=main.css.map */
