@@ -429,7 +429,7 @@ p {
   right: 0;
   left: 0;
   background-color: #FFFFFF;
-  z-index: 999;
+  z-index: 999999999999;
 }
 
 .header__inner-wrap {
@@ -583,20 +583,34 @@ p {
     width: 75px;
     height: 20px;
   }
+  .header__mob-bacg {
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    height: calc(100vh - 100%);
+    background: rgba(0, 0, 0, 0.075);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
   .header__right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
+    flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: absolute;
     left: 0;
     width: 260px;
-    height: calc(100vh - 100%);
-    top: 100%;
+    height: 100%;
+    top: 0;
     background-color: #333A44;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
     -webkit-transform: translateX(-200%);
             transform: translateX(-200%);
     -webkit-transition: all 1s ease;
@@ -677,28 +691,22 @@ p {
   .header__cross {
     display: none;
   }
+  .active .header__mob-bacg {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 5;
+  }
   .active .header__right {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    position: absolute;
-    left: 0;
-    width: 260px;
-    height: calc(100vh - 100%);
-    top: 100%;
-    background-color: #333A44;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 9999999999;
   }
   .active .header__cross {
     display: inline-block;
