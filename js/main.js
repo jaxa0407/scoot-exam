@@ -5,9 +5,10 @@ elBtn.addEventListener("click", ( )=>{
     elHeader.classList.toggle("active")
 })
 
-var elFaq = document.querySelector(".faq__inner-wrap");
-var elButton = document.querySelector(".faq__qiestion-btn")
+var items = document.getElementsByClassName("faq__list-item");
 
-elButton.addEventListener("click", ( )=>{
-    elFaq.classList.toggle("faq__open")
-})
+for (var i = 0; i < items.length; i++) {
+  items[i].onclick = function () {
+    this.classList.toggle("faq__open");
+  };
+};
