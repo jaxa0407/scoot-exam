@@ -8,6 +8,6 @@ elBtn.addEventListener("click", ( )=>{
 var elFaq = document.querySelector(".faq__inner-wrap");
 var elButton = document.querySelector(".faq__qiestion-btn")
 
-elButton = addEventListener("click", ( )=>{
+elButton.addEventListener("click", ( )=>{
     elFaq.classList.toggle("faq__open")
 })
