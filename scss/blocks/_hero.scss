@@ -9,12 +9,6 @@
     margin: 0 auto;
     position: relative;
 
-    &__container {
-        
-    }
-
-    &__inner-wrap {
-    }
 
     &__left {
         
@@ -71,7 +65,7 @@
     }   
 
     &__btn {
-        
+        cursor: pointer;
     }
 }
 

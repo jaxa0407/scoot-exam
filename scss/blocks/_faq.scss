@@ -1,6 +1,6 @@
 .faq { position: relative;
     margin-top: 120px;
-    margin-bottom: 160px;
+    margin-bottom: 1px;
 
 
     &__heading { 
@@ -55,7 +55,7 @@
         overflow-y: hidden;
         padding: 32px 40px;
         background-color: #F2F5F9;
-        max-height: 90px;
+        max-height: 92px;
         height: 100%;
         transition: all 1s ease;
     }
@@ -68,7 +68,6 @@
     }
 
     &__question-heading {
-        padding-bottom: 24px;
         font-size: 24px;
         line-height: 28px;
         letter-spacing: -1.07143px;
@@ -79,6 +78,7 @@
         border: none;
         outline: none;
         background: none;
+        cursor: pointer;
     }
 
     &__opened-btn {
@@ -88,11 +88,11 @@
 
 
     &__answer {
-        transform: translateY(hidden);
+        margin-top: 30px;
+        transform: translate(hidden);
         font-size: 15px;
         line-height: 25px;
         transition: all 1s ease;
-        color: transparent;
     }
 
     &__open {

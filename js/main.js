@@ -12,3 +12,4 @@ for (var i = 0; i < items.length; i++) {
     this.classList.toggle("faq__open");
   };
 };
+
