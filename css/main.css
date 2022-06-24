@@ -2607,7 +2607,8 @@ p {
 
 .faq {
   position: relative;
-  padding: 200px 0;
+  margin-top: 120px;
+  margin-bottom: 160px;
 }
 
 .faq__heading {
@@ -2797,6 +2798,7 @@ p {
     margin: 0;
     padding: 0;
     margin-top: 145px;
+    margin-bottom: 120px;
   }
   .faq__item-heading {
     font-size: 24px;
