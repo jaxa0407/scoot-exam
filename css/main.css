@@ -3071,7 +3071,7 @@ p {
     color: #495567;
   }
   .faq__right-question {
-    max-height: 120px;
+    max-height: 110px;
     height: 100%;
   }
   .faq__open .faq__answer {
